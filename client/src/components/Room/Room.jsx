@@ -76,11 +76,11 @@ const Room = () => {
   });
 
   useEffect(() => {
-    if (storyDescription) {
+    if (typeof storyDescription === 'string' && !isHost) {
       const input = document.getElementById('storyDescription');
       if (input) input.value = storyDescription;
     }
-  }, [storyDescription]);
+  }, [storyDescription, isHost]);
 
   if (!user) {
     if (id) {
@@ -114,9 +114,7 @@ const Room = () => {
   };
 
   const onChange = (e) => {
-    if (e.target.value) {
-      dispatch(updateRoomStoryDescription(e.target.value));
-    }
+    dispatch(updateRoomStoryDescription(e.target.value));
   };
 
   return (
