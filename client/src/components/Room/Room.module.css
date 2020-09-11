@@ -1,0 +1,24 @@
+.playersDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playersDiv > div {
+  padding: 20px;
+}
+
+.roomContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.copyRoomId {
+  margin-bottom: 20px;
+  align-content: center;
+  /* font-size: large; */
+}
+.copyRoomId button {
+  margin-left: 20px;
+}

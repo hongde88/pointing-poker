@@ -1,0 +1,12 @@
+.leftArrow,
+.rightArrow {
+  width: 4rem !important;
+  height: 4rem !important;
+  cursor: pointer;
+}
+
+.avatarDiv {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}

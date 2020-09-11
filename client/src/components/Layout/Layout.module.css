@@ -1,0 +1,9 @@
+.logoDiv img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.logoDiv {
+  text-align: left;
+}

@@ -1,0 +1,22 @@
+.small-logo > img {
+  width: auto;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.small-logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-container {
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: -15px;
+}
