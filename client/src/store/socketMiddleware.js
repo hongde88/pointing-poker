@@ -26,7 +26,7 @@ import {
   resetUserVote,
 } from './actions/user';
 
-let URL = process.env.NODE_ENV === 'production' ? 'http://pointing-poker-cp4s.apps.cp4s-tis-blue.os.fyre.ibm.com' : 'http://localhost:5001';
+let URL = process.env.SERVER_URL || 'http://localhost:5001';
 let socket = null;
 
 const socketMiddleware = (store) => (next) => async (action) => {
